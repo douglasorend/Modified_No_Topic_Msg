@@ -1,23 +1,26 @@
-[hr]
-[center][color=red][size=16pt][b]MODIFIED NO TOPICS MESSAGE v1.2[/b][/size][/color]
-[url=http://www.simplemachines.org/community/index.php?action=profile;u=253913][b]By Dougiefresh[/b][/url] -> [url=http://custom.simplemachines.org/mods/index.php?mod=4016]Link to Mod[/url]
-[/center]
-[hr]
+--------
 
-[color=blue][b][size=12pt][u]Introduction[/u][/size][/b][/color]
+## **MODIFIED NO TOPICS MESSAGE v1.2**
+
+[**By Dougiefresh**](http://www.simplemachines.org/community/index.php?action=profile;u=253913) -> [Link to Mod](http://custom.simplemachines.org/mods/index.php?mod=4016)
+
+--------
+
+## Introduction
 This mod modifies the MessageIndex template so that it is clearer (at least to me) that there are no topics or posts to view in the board.
 
-[color=blue][b][size=12pt][u]Admin Settings[/u][/size][/b][/color]
+## Admin Settings
 There are no admin settings to this mod.  To disable, you must uninstall this mod.
 
-[color=blue][b][size=12pt][u]Compatibility Notes[/u][/size][/b][/color]
+## Compatibility Notes
 This mod was tested on SMF 2.0.9, but should work on any version of SMF 2.0.x.  SMF 1.x and SMF 2.1 is not and will not be supported.
 
-[color=blue][b][size=12pt][u]Changelog[/u][/size][/b][/color]
-The changelog can be viewed at [url=http://www.xptsp.com/board/free-modifications/modified-no-topic-msg/?tab=1]XPtsp.com[/url].
+## Changelog
+The changelog can be viewed at [XPtsp.com](http://www.xptsp.com/board/free-modifications/modified-no-topic-msg/?tab=1).
 
-[color=blue][b][size=12pt][u]License[/u][/size][/b][/color]
+## License
 Copyright (c) 2015 - 2018, Douglas Orend
+
 All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
