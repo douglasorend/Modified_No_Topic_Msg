@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!DOCTYPE modification SYSTEM "http://www.simplemachines.org/xml/modification">
+<modification xmlns="http://www.simplemachines.org/xml/modification" xmlns:smf="http://www.simplemachines.org/">
+<id>Dougiefresh:ModdedNoTopics</id>
+<name>Modified No Topics Message</name>
+<version>1.0</version>
+	
+<file name="$themedir/MessageIndex.template.php">
+	<operation>
+		<search position="replace"><![CDATA[if (!empty($context['topics']))]]></search>
+		<add><![CDATA[//if (!empty($context['topics']))]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA[else
+			echo '
+					<th scope="col" class="first_th" width="8%">&nbsp;</th>
+					<th colspan="3"><strong>', $txt['msg_alert_none'], '</strong></th>
+					<th scope="col" class="last_th" width="8%">&nbsp;</th>';]]></search>
+		<add><![CDATA[/*else
+			echo '
+					<th scope="col" class="first_th" width="8%">&nbsp;</th>
+					<th colspan="3"><strong>', $txt['msg_alert_none'], '</strong></th>
+					<th scope="col" class="last_th" width="8%">&nbsp;</th>';*/]]></add>
+	</operation>
+	<operation>
+		<search positon="replace"><![CDATA[<a id="bot"></a>';]]></search>
+		<add><![CDATA[<a id="bot"></a>';
+		if (empty($context['topics']))
+			echo '<div class="information"><strong>', $txt['no_topics_or_posts'], '</strong></div>';]]></add>
+	</operation>
+</file>
+<file name="$boarddir/Themes/core/MessageIndex.template.php" error="skip">
+	<operation>
+		<search position="replace"><![CDATA[if (!empty($context['topics']))]]></search>
+		<add><![CDATA[//if (!empty($context['topics']))]]></add>
+	</operation>
+	<operation>
+		<search position="replace"><![CDATA[if (empty($context['topics']))
+			echo '
+						<tr class="windowbg2">
+							<td class="catbg3" colspan="', !empty($context['can_quick_mod']) ? '8' : '7', '"><strong>', $txt['msg_alert_none'], '</strong></td>
+						</tr>';]]></search>
+		<add><![CDATA[/*if (empty($context['topics']))
+			echo '
+						<tr class="windowbg2">
+							<td class="catbg3" colspan="', !empty($context['can_quick_mod']) ? '8' : '7', '"><strong>', $txt['msg_alert_none'], '</strong></td>
+						</tr>';*/]]></add>
+	</operation>
+	<operation>
+		<search positon="replace"><![CDATA[<a id="bot"></a>';]]></search>
+		<add><![CDATA[<a id="bot"></a>';
+		if (empty($context['topics']))
+			echo '<div class="information"><strong>', $txt['no_topics_or_posts'], '</strong></div>';]]></add>
+	</operation>
+</file>
+</modification>
