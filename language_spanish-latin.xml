@@ -8,11 +8,19 @@
 <!-------------------------------------------------------------------------->
 <!-- Language file edits (English - Modifications & PersonalMessage)      -->
 <!-------------------------------------------------------------------------->
-<file name="$languagedir/index.english-utf8.php" error="skip">
+<file name="$languagedir/index.spanish_latin.php" error="skip">
 	<operation>
 		<search position="replace"><![CDATA[// Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)]]></search>
-		<add><![CDATA[$txt['no_topics_or_posts'] = 'No topics or posts to display.';
+		<add><![CDATA[$txt['no_topics_or_posts'] = 'No hay temas o publicaciones para mostrar.';
+// Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)]]></add>
+	</operation>
+</file>
+</modification>
 
+<file name="$languagedir/index.spanish_latin-utf8.php" error="skip">
+	<operation>
+		<search position="replace"><![CDATA[// Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)]]></search>
+		<add><![CDATA[$txt['no_topics_or_posts'] = 'No hay temas o publicaciones para mostrar.';
 // Locale (strftime, pspell_new) and spelling. (pspell_new, can be left as '' normally.)]]></add>
 	</operation>
 </file>
